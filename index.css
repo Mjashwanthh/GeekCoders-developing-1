@@ -3,7 +3,15 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    
 }
+.global-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+ }
+
 .title-h1 ,.title-h2{
     color : rgb(67, 231, 113);
 }
@@ -42,23 +50,25 @@ body {
     color : blue;
 }
 .practice-questions {
-    height  : 168px; 
+    height  : 140px; 
     width : 240px;
-    padding-bottom : 6px;
-    
+    border-color: aqua;
+    border-radius : 15px;
+    border-width: 3px;
+
 }
 .dsa-questions {
-    height  : 170px; 
-    width : 240px;
-    padding-left : 20px;
-    padding-top : 20px;
-    padding-bottom : 26px;
-    
+    height : 140px;
+    width : 230px;
+    margin-left : 10px;
+    padding : 0;
+    border-radius : 15px;
+    border-width : 5px;
+    border-color : aqua;
 }
+
 .practice-questions:hover,.dsa-questions:hover {
-    height : 180px;
-    width : 250px;
-    opacity : 70%;
+    border-color : red;
 }
 .practice-questions-div {
     display: inline;
@@ -97,13 +107,11 @@ body {
     width : 200px;
     margin-left : 10px;
     margin-right : 5px;
-   
+    border-width : 3px;
     border-radius : 10px;
 }
 .array:hover,.string:hover,.linkedlist:hover,.stack:hover,.queue:hover,.binarysearch:hover,.sorting:hover,.tree:hover,.graph:hover,.recursion:hover,.dynamic:hover {
-    height : 160px;
-    width : 210px;
-    opacity : 70%;
+   border-color : red;
 }
 
 .string {
@@ -111,23 +119,28 @@ body {
     width : 200px;
     
 }
-.login-button , .register-button,.submit {
-    height : 35px;
+.login-button ,.register-button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(15, 78, 239);
+    display : flex;
+    align-items: center;
+    justify-content:center;
+    height : 50px;
     width : 130px;
-    border-radius: 4px;
-    background-color: blue;
+    border-width: 2px;
+    border-radius: 8px;
+   
     color : white;
-    border : black;
-    font-family: sans-serif;
     cursor : pointer;
-    margin-left : 20px;
-    margin-right : 20px;
+    margin-left : 600px;
+    position : relative;
 }
 
-.login-button:hover ,.register-button:hover,.submit:hover {
-    width : 135px;
-    height : 37px;
-    background-color: rgb(27, 166, 212);
+.login-button:hover ,.register-button,.submit:hover {
+  
+   background:black;
+   border-color:white;
+   color : white;
 }
 
 #register-username,#register-email,#register-password,#register-confirm-password{
@@ -208,3 +221,32 @@ body {
     justify-content: space-around;
     margin: 2rem 5rem 10rem;
 }
+
+.loginsignup {
+    display : flex;
+    background : rgb(55, 107, 238);
+    padding : 0px 10px 10px 10px;
+    border-width : 3px; 
+    border-radius : 30px;
+}
+.loginsignup:hover {
+    background : black;
+  
+    border-color: rgb(55, 107, 238);
+   
+}
+#perf{
+    margin-top : 10px;
+    margin-left : 1300px;
+    padding : 10px 20px 10px 20px;
+    color: white;
+    background-color: black;
+    border-radius : 5px;
+    border-width : 3px;
+  }
+  #perf:hover {
+    color :rgb(20, 182, 252);
+    border-color : rgb(20, 182, 252);
+
+  }
+ 
