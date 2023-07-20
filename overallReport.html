@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overall Report</title>
+    <link rel="stylesheet" href="index.css">
+    
+    
+    <style>
+       #myChart{
+	    position:relative;
+		top:240px;
+		left:27%;
+    
+	   }
+    </style>
+</head>
+<body onload="loading();">
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+</body>
+
+<script>
+let c=0;
+function loading(){
+for(let i=0;i<localStorage.length;i++){
+ var key=localStorage.key(i);
+ 
+ var value=localStorage.getItem(key);
+ if(value=='true'){
+ c++;
+ 
+ }
+}
+pie();
+}
+
+function pie(){
+  let val=c;
+    var xValues = ["solved", "unsolved"];
+var yValues = [`${val}`,5-`${val}`];
+var barColors = [
+  "#b91d47",
+  "#2b5797"
+];
+
+new Chart("myChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "user's overall performance ",
+      fontColor: "white",
+    }
+  },
+  legend: {
+    labels: {
+      color: "white",
+    }
+  }
+});
+
+}
+
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</html>
