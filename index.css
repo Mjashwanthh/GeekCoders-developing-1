@@ -955,6 +955,7 @@ body {
 }
 .checkboxes {
     cursor: pointer;
+   
 }
 .overresult-title {
     display: flex;
