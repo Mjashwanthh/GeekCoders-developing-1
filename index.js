@@ -8,11 +8,6 @@ for(let i=0;i<localStorage.length;i++){
  }
 }
 
-
-
-
- 
-
 function pie(){
   let val=c;
     var xValues = ["solved", "unsolved"];

@@ -63,7 +63,7 @@
     </style>
 </head>
 
-<body id="body">
+<body id="body" onload = "stopBack();">
 
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -133,6 +133,7 @@
 </body>
 
 <script name="internalScript">
+    window.history.forward();
     let Username;
     function register() {
         location.href = "./accountCreation.html";
@@ -189,6 +190,11 @@
 
 
     }
+
+    
+   
+    
 </script>
+
 
 </html>
